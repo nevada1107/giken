@@ -5,14 +5,18 @@
     <title></title>
       <header>
         <ul>
+          <img src="photos/icon.png" width="100" class="icon" height="" align="left">
 <u> <a style="color:white">HOME</a> </u>
 <a href="underpath/iframe1.html" style="color:white" onmouseover="style='color:gray',this.style.textDecoration='underline'" onmouseout="style='color:white'">レポート</a>
 <a href="underpath/iframe2.html" style="color:white" onmouseover="style='color:gray',this.style.textDecoration='underline'" onmouseout="style='color:white'">ポイントとメンバー</a>
 <a href="underpath/iframe3.html" style="color:white" onmouseover="style='color:gray',this.style.textDecoration='underline'" onmouseout="style='color:white'">連絡</a>
 </ul>
-      </header>
+</header>
   </head>
   <style>
+  icon{
+    margin-top:0 auto;
+  }
 ul{
   overflow:hidden;
   list-style:none;
@@ -27,7 +31,7 @@ text-decoration:none;
 }
 
 header{
-  font-size:20px;
+  font-size:15px;
   z-index: 10;
 　height: 100px;
   position: absolute;
@@ -46,6 +50,28 @@ header{
       location.href="index.html"
     }
       </script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: false,
+                pause: 5000,
+            });
+        });
+</script>
+<br>
+<br>
+<br>
+<div class="slider">
+<video src="videos/giken.mp4" width="500" height="400" alt="" controls> </video>
+<img src="photos/kaname2.png"alt="">
+<img src="photos/photo3.png"alt="">
+<img src="photos/photo1.png"alt="">
+</div>
   <body>
+
   </body>
 </html>
